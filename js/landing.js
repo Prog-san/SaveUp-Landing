@@ -5,6 +5,8 @@ var redirectTimeout;
 
 function init() {
   startTimeout();
+
+
 }
 
 function updateButtonText() {
@@ -19,8 +21,10 @@ function scrollToSection(sectionId) {
     if (section) {
       section.scrollIntoView({ behavior: 'smooth' });
     }
-  }
+}
+
 // Llama a la función init cuando se carga la página
 window.onload = function () {
   init();
 };
+

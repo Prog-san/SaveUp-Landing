@@ -3,19 +3,54 @@
     padding: 0px;
     margin: 0px;
     text-decoration: none;
-    font-family: 'NunitoSans-Light';
+    font-family: 'NunitoSans-Light', sans-serif;
 }
 
+@font-face {
+    font-family: 'Anek Bangla Light';
+    src: url('../assets/fonts/AnekBangla300.ttf');
+
+}
+
+@font-face {
+    font-family: 'Anek Bangla Bold';
+    src: url('../assets/fonts/AnekBangla500.ttf');
+}
+
+
 #container {
-    width: 80%;
+    width: auto;
     height: auto;
     margin: 0px auto;
 }
+#header {
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    width: 100%;
+    height: 100px;
+    background-color: #67C5C8;
+    color: #fff;
+    padding: 2%; /* Cambiado a porcentaje */
+    overflow: auto;
+
+}
+
+#header img {
+    width: 5%;
+    height: 5%;
+    padding: 5% 0 0 5%; /* Cambiado a porcentaje */
+}
+#header h2 {
+    /* Asegúrate de que el tamaño de la fuente sea proporcional al tamaño del header */
+    font-size: 2em; /* Cambia este valor según tus necesidades */
+}
 
 #logo {
-    width: 100px;
-    height: 100px;
-    border-right: 20px;
+    max-width: 100%;
+    width: 32em;
+    height: auto;
+    margin-bottom: 20px;
 }
 
 h1,
@@ -26,11 +61,18 @@ h2 {
 #page {
     float: right;
     width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 #box_1 {
-    float: left;
+    display: flex;
+    justify-content: left;
     width: 10%;
+    height: 10%;
+    margin: 15px;
+    margin-top: 29px;
 }
 
 footer {
@@ -117,7 +159,7 @@ footer a {
 }
 
 .menu_item {
-    color: #67C5C8;
+    color: #ffffff;
     width: 50%;
     height: 100%;
     left: -100%;
@@ -142,10 +184,11 @@ footer a {
     padding-top: 1%;
     text-decoration: none;
     font-size: 50px;
-    padding: 100x;
+    padding: 100px;
 }
 #my_nav .menu_item {
-    margin: 0 25px;
+    margin: 10px 10px;
+    font-family: "Anek Bangla Bold", sans-serif;
   }
   
  
@@ -157,9 +200,10 @@ footer a {
     margin-top: 29px;
 }
 #botonVerSitioWeb {
-    color: #67C5C8;
-    border: #67C5C8 solid 2px;
+    color: #10696b;
+    border: #186f7e solid 2px;
     margin-left: 40px;
+    margin-right: 20px;
     float: left;
 }
 
@@ -172,12 +216,13 @@ footer a {
         color: #67C5C8;
         border: #67C5C8 solid 2px;
         margin-left: 40px;
-        float: center;
+        float: left;
     }
 }
 
 .startup_tittle {
     font-size: 45px;
+    font-family: "Anek Bangla Bold", sans-serif;
     color: #67C5C8;
 }
 
@@ -196,7 +241,7 @@ footer a {
     align-items: center;
 }
 
-#logo {
+#logo2 {
     max-width: 100%;
     width: 32em;
     height: auto;
@@ -274,7 +319,7 @@ footer a {
     #who_we_are_p {
         font-size: 27px;
         text-align: justify;
-        border: 0%;
+        border: 1px solid black;
         padding-right: 4%;
         width: 11em;
     }

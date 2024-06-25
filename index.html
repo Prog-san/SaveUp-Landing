@@ -1,128 +1,175 @@
 <!DOCTYPE html>
-<html lang="es">
-
+<html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <link rel="stylesheet" href="css/styles.css" />
-    <link rel="icon" href="assets/images/LOGO.png" />
-    <script src="js/landing.js"></script>
-
-    <!--boostrap 5 -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!-- Importar Bootstrap y tu archivo CSS personalizado -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
-    <title>SaveUp</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/landing_styles.css">
 </head>
-
 <body>
-
-    <div id="container">
-        <header id="header">
-            <div id="page">
-                <div id="box_1">
-                    <img id="logo" src="assets/images/LOGO.png">
-                </div>
-                <div id="box">
-                    <nav id="my_nav">
-                        <a href="javascript:void(0);" onclick="scrollToSection('valores1')" class="menu_item">Nosotros</a>
-                        <a href="javascript:void(0);" onclick="scrollToSection('startup_title2')" class="menu_item" id="menu_equipo">Equipo</a>
-                    </nav>
-                </div>
-                
-                <div id="cajon3">
-                    <button id="botonVerSitioWeb" class="btn btn-outline-success" type="button" onclick="window.location.href='https://websitesaveup.netlify.app/'">Visitar Sitio Web</button>
-                </div>
-
-                <div class="clearfix"></div>
-            </div>
-        </header>
-
-        <section>
-            <h1 class="startup_tittle"> ¿Quienes somos? </h1>
-            <br>
-
-            <div class="container2">
-                <img id="logo" src="assets/images/trabajo.jpg" alt="Descripción de la imagen">
-                <div class="description">
-                    <p id="who_we_are_p" style="font-size: 25px;">Somos una empresa dedicada a la venta de productos envasados y enlatados a muy buen precio y accesibles para todo público, contamos con más de 4 años en el mercado.</p>
+    <!-- Topbar -->
+    <nav class="navbar navbar-expand-md navbar-light" style="background-color: #e8764f;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Y U M B L E</a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#nuestro-producto">Nuestro Producto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#quienes_somos">Quienes Somos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#nuestro_equipo">Nuestro Equipo</a>
+                    </li>
+                </ul>
+                <div class="d-flex">
+                    <button class="btn btn-outline-success" type="button" onclick="window.location.href='https://websitesaveup.netlify.app/'">Ver página web</button>
                 </div>
             </div>
-            <br>
-            <h1 id="valores1" class="startup_tittle"> SaveUp </h1>
-            <br><br>
-            <div class="container">
-                <div class="row">
-                    <div class="col">
-                        <h1 class="sub_tittle">Nuestra Misión</h1>
-                    </div>
-                    <div class="col">
-                        <h1 class="sub_tittle">Nuestra Visión</h1>
-                    </div>
+        </div>
+    </nav>
+
+    <!-- Carrusel -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <!-- Aquí puedes agregar tantos elementos de carrusel como necesites -->
+            <div class="carousel-item active">
+                <img src="assets/images/carrousel/carrousel_image.jpg" class="carousel-image d-block w-100 carousel-image" alt="...">
+                <div class="carousel-caption d-none d-md-block carousel-text">
+                    <h5 class="fs-1 fs-sm-2 fs-md-3 fs-lg-4 fs-xl-5">Nuestros repartidores están listos para llevar tus pedidos
+                        directamente a tu puerta, utilizando la última tecnología
+                        para garantizar una entrega rápida y eficiente</h5>
                 </div>
-                <br>
+            </div>
+            <!-- Nuevo slide -->
+            <div class="carousel-item">
+                <img src="assets/images/carrousel/carrousel_image2.jpg" class="carousel-image d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block carousel-text">
+                    <h5 class="fs-1 fs-sm-2 fs-md-3 fs-lg-4 fs-xl-5">Únete a la satisfacción de nuestros clientes, como ella,
+                        que ya han descubierto los beneficios de comprar inteligentemente
+                        con nosotros</h5>
+                </div>
             </div>
 
-            <div class="container">
-                <div class="row">
-                    <div class="col">
-                        <div class="card" style="width: 18rem;
-                        top: 50%;
-                        left: 50%;
-                        transform: translate(-50%, -50%);">
-                            <img src="https://assets.website-files.com/5f1618726b3fb3f4cbb10bd2/624a08b72fd6200b7e73ce88_mission%20.jpg" class="card-img-top" alt="..." style="height: 305px;">
-                            <div class="card-body">
-                                <p class="card-text" style="text-align: justify;"> Ofrecer productos de alta calidad a precios asequibles mientras abordamos el problema del desperdicio de alimentos en el Perú.</p>
-                            </div>
+            <!-- Nuevo slide -->
+            <div class="carousel-item">
+                <img src="assets/images/carrousel/carrousel_image3.jpg" class="carousel-image d-block w-100 " alt="...">
+                <div class="carousel-caption d-none d-md-block carousel-text">
+                    <h5 class="fs-1 fs-sm-2 fs-md-3 fs-lg-4 fs-xl-5">Cada producto está cuidadosamente organizado para
+                        asegurarnos de que todo llegue en perfectas condiciones
+                        y a tiempo</h5>
+                </div>
+            </div>
+            <!-- ... -->
+        </div>
+        <!-- Aquí puedes configurar las flechas del carrusel -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <section id="nuestro-producto">
+        <h1 class="section-title">Nuestro Producto</h1>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <img src="assets/images/saveUP_logo.png" class="img-fluid" alt="Producto 1">
+                </div>
+                <div class="col-sm-6">
+                    <p class="section-product">
+                        Ofrecemos una amplia variedad de productos enlatados y envasados
+                        de alta calidad a precios asequibles. Nuestros productos son
+                        cuidadosamente seleccionados para garantizar la frescura y
+                        calidad de cada uno de ellos.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Sección Quienes Somos -->
+    <section id="quienes_somos">
+        <h1 class="section-title">Quienes Somos</h1>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <p class="section-text">
+                        Somos una empresa dedicada a la venta de productos envasados y
+                        enlatados a muy buen precio y accesibles para todo público, contamos
+                        con más de 4 años en el mercado.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row align-center">
+                <!-- Aquí puedes agregar tantas cards como necesites -->
+                <div class="col-lg-4 col-md-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Misión</h5>
+                            <p class="card-text">
+                                Ofrecer productos de alta calidad a precios asequibles
+                                mientras abordamos el problema del desperdicio de alimentos
+                                en el Perú.
+                            </p>
                         </div>
                     </div>
-
-                    <div class="col">
-                        <div class="card" style="width: 18rem;
-                        top: 50%;
-                        left: 50%;
-                        transform: translate(-50%, -50%);">
-                            <img src="https://assets.website-files.com/5f1618726b3fb3f4cbb10bd2/624a07a45e22f801be74b95a_vision%20.jpg" class="card-img-top" alt="..." style="height: 295px;">
-                            <div class="card-body">
-                                <p class="card-text" style="text-align: justify;">Convertirnos en líderes nacionales en la venta de productos de calidad a precios asequibles y fomentando el acceso a alimentos de calidad para todos los peruanos</p>
-                            </div>
+                </div>
+                <!-- ... -->
+                <!-- Aquí puedes agregar tantas cards como necesites -->
+                <div class="col-lg-4 col-md-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Visión</h5>
+                            <p class="card-text">
+                                Convertirnos en líderes nacionales en la venta de productos de
+                                calidad a precios asequibles y fomentando el acceso a alimentos
+                                de calidad para todos los peruanos
+                            </p>
                         </div>
                     </div>
                 </div>
-            </div>
-            <br>
-            <div class="container text-center">
-                <div class="row">
-
-                    <div class="col align-self-center">
-                        <h1 class="sub_tittle">Nuestros Valores</h1>
-                        <section>
-                            <div class="card" style="width: 18rem;
-                        top: 50%;
-                        left: 50%;
-                        ;transform: translate(-50%)">
-                                <img src="assets/images/values.jpg" class="card-img-top" alt="..." style="height: 305px;">
-                                <div class="card-body">
-                                    <p class="card-text" style="text-align: justify;">Nuestra empresa cuenta con valores como la sostenibilidad, calidad, excelencia, innovación e inclusión pues estamos comprometidos con ofrecer productos de calidad a precios asequibles y fomentando el acceso de alimentos
-                                        para todos los peruanos.</p>
-                                </div>
-                            </div>
-                        </section>
+                <!-- ... -->
+                <!-- Aquí puedes agregar tantas cards como necesites -->
+                <div class="col-lg-4 col-md-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Valores</h5>
+                            <p class="card-text">Nuestra empresa cuenta con valores como la sostenibilidad,
+                                calidad, excelencia, innovación e inclusión pues estamos comprometidos con
+                                ofrecer productos de calidad a precios asequibles y fomentando el acceso de
+                                 para todos los peruanos.</p>
+                        </div>
                     </div>
                 </div>
+                <!-- ... -->
             </div>
+        </div>
+    </section>
 
-            <br><br>
+    <!-- Sección Nuestro Equipo -->
+    <section id="nuestro_equipo">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="row text-center justify-content-center">
+                        <h1 class="section-title">Nuestro Equipo</h1>
 
-            <h1 id="startup_title2" class="startup_tittle">Nuestro Equipo</h1>
-            <br>
+                        <p class="section-text">
+                            Somos una empresa dedicada a la venta de productos envasados y
+                            enlatados a muy buen precio y accesibles para todo público, contamos
+                            con más de 4 años en el mercado.
+                        </p>
 
-            <div id="startup_title" class="container">
-                <div class="row text-center justify-content-center">
-                    
-
-
-                    <div  class="col-xl-4 col-sm-6 mb-5"><div class="bg-white rounded shadow-sm py-5 px-4"><img src="assets/images/juanjose.png" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+                        <div  class="col-xl-4 col-sm-6 mb-5"><div><img src="assets/images/juanjose.png" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
                             <h5 class="mb-0">Juan Jose Navarro Chacón</h5><span class="small text-uppercase text-muted">Ingeniería de Software</span>
                             <ul class="social mb-0 list-inline mt-3">
                                 <li class="list-inline-item"><a href="#" class="social-link"><i class="bi bi-facebook"></i></a></li>
@@ -131,86 +178,100 @@
                                 <li class="list-inline-item"><a href="#" class="social-link"><i class="bi bi-linkedin"></i></a></li>
                             </ul>
                         </div>
-                    </div>
-
-                    
-                    <div class="col-xl-4 col-sm-6 mb-5">
-                        <div class="bg-white rounded shadow-sm py-5 px-4"><img src="assets/images/francisco.jpg" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
-                            <h5 class="mb-0">Aldo Francisco Pastrana León</h5><span class="small text-uppercase text-muted">Ingeniería de Software</span>
-                            <ul class="social mb-0 list-inline mt-3">
-                                <li class="list-inline-item"><a href="#" class="social-link"><i class="bi bi-facebook"></i></a></li>
-                                <li class="list-inline-item"><a href="#" class="social-link"><i class="bi bi-twitter"></i></a></li>
-                                <li class="list-inline-item"><a href="#" class="social-link"><i class="bi bi-instagram"></i></a></li>
-                                <li class="list-inline-item"><a href="#" class="social-link"><i class="bi bi-linkedin"></i></a></li>
-                            </ul>
                         </div>
-                    </div>
 
-                    <div class="col-xl-4 col-sm-6 mb-5">
-                        <div class="bg-white rounded shadow-sm py-5 px-4"><img src="assets/images/rodrigo.png" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
-                            <h5 class="mb-0">Rodrigo Alejandro Raymundo Guevara</h5><span class="small text-uppercase text-muted">Ingeniería de Software</span>
-                            <ul class="social mb-0 list-inline mt-3">
-                                <li class="list-inline-item"><a href="#" class="social-link"><i class="bi bi-facebook"></i></a></li>
-                                <li class="list-inline-item"><a href="#" class="social-link"><i class="bi bi-twitter"></i></a></li>
-                                <li class="list-inline-item"><a href="#" class="social-link"><i class="bi bi-instagram"></i></a></li>
-                                <li class="list-inline-item"><a href="#" class="social-link"><i class="bi bi-linkedin"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
 
-                    <div class="col-xl-4 col-sm-6 mb-5">
-                        <div class="bg-white rounded shadow-sm py-5 px-4"><img src="assets/images/pedro.jpeg" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
-                            <h5 class="mb-0">Pedro Jeremy Perez Pizarro</h5><span class="small text-uppercase text-muted">Ingeniería de Software</span>
-                            <ul class="social mb-0 list-inline mt-3">
-                                <li class="list-inline-item"><a href="#" class="social-link"><i class="bi bi-facebook"></i></a></li>
-                                <li class="list-inline-item"><a href="#" class="social-link"><i class="bi bi-twitter"></i></a></li>
-                                <li class="list-inline-item"><a href="#" class="social-link"><i class="bi bi-instagram"></i></a></li>
-                                <li class="list-inline-item"><a href="#" class="social-link"><i class="bi bi-linkedin"></i></a></li>
-                            </ul>
+                        <div class="col-xl-4 col-sm-6 mb-5">
+                            <div><img src="assets/images/francisco.jpg" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+                                <h5 class="mb-0">Aldo Francisco Pastrana León</h5><span class="small text-uppercase text-muted">Ingeniería de Software</span>
+                                <ul class="social mb-0 list-inline mt-3">
+                                    <li class="list-inline-item"><a href="#" class="social-link"><i class="bi bi-facebook"></i></a></li>
+                                    <li class="list-inline-item"><a href="#" class="social-link"><i class="bi bi-twitter"></i></a></li>
+                                    <li class="list-inline-item"><a href="#" class="social-link"><i class="bi bi-instagram"></i></a></li>
+                                    <li class="list-inline-item"><a href="#" class="social-link"><i class="bi bi-linkedin"></i></a></li>
+                                </ul>
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="col-xl-4 col-sm-6 mb-5">
-                        <div class="bg-white rounded shadow-sm py-5 px-4"><img src="assets/images/diego.png" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
-                            <h5 class="mb-0">Diego Antonio Sánchez Ramírez</h5><span class="small text-uppercase text-muted">Ingeniería de Software</span>
-                            <ul class="social mb-0 list-inline mt-3">
-                                <li class="list-inline-item"><a href="#" class="social-link"><i class="bi bi-facebook"></i></a></li>
-                                <li class="list-inline-item"><a href="#" class="social-link"><i class="bi bi-twitter"></i></a></li>
-                                <li class="list-inline-item"><a href="#" class="social-link"><i class="bi bi-instagram"></i></a></li>
-                                <li class="list-inline-item"><a href="#" class="social-link"><i class="bi bi-linkedin"></i></a></li>
-                            </ul>
+                        <div class="col-xl-4 col-sm-6 mb-5">
+                            <div><img src="assets/images/rodrigo.png" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+                                <h5 class="mb-0">Rodrigo Alejandro Raymundo Guevara</h5><span class="small text-uppercase text-muted">Ingeniería de Software</span>
+                                <ul class="social mb-0 list-inline mt-3">
+                                    <li class="list-inline-item"><a href="#" class="social-link"><i class="bi bi-facebook"></i></a></li>
+                                    <li class="list-inline-item"><a href="#" class="social-link"><i class="bi bi-twitter"></i></a></li>
+                                    <li class="list-inline-item"><a href="#" class="social-link"><i class="bi bi-instagram"></i></a></li>
+                                    <li class="list-inline-item"><a href="#" class="social-link"><i class="bi bi-linkedin"></i></a></li>
+                                </ul>
+                            </div>
                         </div>
+
+                        <div class="col-xl-4 col-sm-6 mb-5">
+                            <div><img src="assets/images/pedro.jpeg" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+                                <h5 class="mb-0">Pedro Jeremy Perez Pizarro</h5><span class="small text-uppercase text-muted">Ingeniería de Software</span>
+                                <ul class="social mb-0 list-inline mt-3">
+                                    <li class="list-inline-item"><a href="#" class="social-link"><i class="bi bi-facebook"></i></a></li>
+                                    <li class="list-inline-item"><a href="#" class="social-link"><i class="bi bi-twitter"></i></a></li>
+                                    <li class="list-inline-item"><a href="#" class="social-link"><i class="bi bi-instagram"></i></a></li>
+                                    <li class="list-inline-item"><a href="#" class="social-link"><i class="bi bi-linkedin"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-4 col-sm-6 mb-5">
+                            <div><img src="assets/images/diego.png" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+                                <h5 class="mb-0">Diego Antonio Sánchez Ramírez</h5><span class="small text-uppercase text-muted">Ingeniería de Software</span>
+                                <ul class="social mb-0 list-inline mt-3">
+                                    <li class="list-inline-item"><a href="#" class="social-link"><i class="bi bi-facebook"></i></a></li>
+                                    <li class="list-inline-item"><a href="#" class="social-link"><i class="bi bi-twitter"></i></a></li>
+                                    <li class="list-inline-item"><a href="#" class="social-link"><i class="bi bi-instagram"></i></a></li>
+                                    <li class="list-inline-item"><a href="#" class="social-link"><i class="bi bi-linkedin"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+
                     </div>
-                   
                 </div>
             </div>
-            <br>
-            <div class="clearfix"></div>
-        </section>
-
-    </div>
-    <footer>
-        <div class="container footer_container">
-            <div class="contact-info">
-                <h4>Contacto</h4>
-                <p><i class="bi bi-envelope"></i> ServiFix@bussiness.com</p>
-                <p><i class="bi bi-phone"></i> 932687623</p>
-                <!-- Agrega más información de contacto si es necesario -->
+        </div>
+    </section>
+    <section id="Motivar al cliente">
+        <h1 class="section-title text-center">!No te pierdas nuestros beneficios!</h1>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-sm-6 text-center">
+                    <img src="assets/images/saveup_frontendpage.png" class="img-fluid" alt="Producto 1">
+                    <p class="section-product">
+                        Ofrecemos una amplia variedad de productos enlatados y envasados
+                        de alta calidad a precios asequibles. Nuestros productos son
+                        cuidadosamente seleccionados para garantizar la frescura y
+                        calidad de cada uno de ellos.
+                    </p>
+                    <button class="btn btn-primary" onclick="window.location.href='https://websitesaveup.netlify.app/'">Haz clic aquí</button>
+                </div>
             </div>
-            <div class="footer-menu">
-                <h4>Enlaces</h4>
-                <ul class="footer_ul">
-                    <li class="footer_li"><a href="javascript:void(0);" onclick="scrollToSection('startup_title2')">Nosotros</a></li>
-                    <li class="footer_li"><a href="javascript:void(0);" onclick="scrollToSection('valores1')">Nuestro Equipo</a></li>
-                    <!-- Agrega más enlaces según tu sitio web -->
-                </ul>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row align-items-start">
+                <div class="col-sm-6">
+                    <h5>Contactos</h5>
+                    <p class="footer-link"><i class="bi bi-envelope"></i> ServiFix@bussiness.com</p>
+                    <p class="footer-link"><i class="bi bi-phone"></i> 932687623</p>
+                </div>
+                <div class="col-sm-6">
+                    <h5>Enlaces</h5>
+                    <ul>
+                        <li><a class="footer-link" href="#quienes_somos">Quienes Somos</a></li>
+                        <li><a class="footer-link" href="#nuestro_equipo">Nuestro Equipo</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="javascript/javascript.js"></script>
-
+    <!-- Importar Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-
 </html>
